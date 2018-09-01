@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.css">
+        <title>Fake Portfolio</title>
+    </head>
+    <body>
+        <aside id="toolbar">
+            <figure>
+                <img id="profile" src="https://via.placeholder.com/40x40" alt="Designer">
+                <figcaption>Jhonny Doe</figcaption>
+            </figure>
+            <svg id="menu" width="32" height="32"><path fill="#fff" d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z"/></svg>
+        </aside>
+        <main class="container">
+            <aside>                
+                <nav id="nav">
+                    <div class="img-placeholder"></div>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About me</a>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <div>
+                <h1>I'm a designer of things.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatum quod magni a doloremque necessitatibus veniam sunt, perferendis quisquam in itaque quis. Eos earum voluptates aliquid omnis cupiditate autem unde optio beatae laudantium sunt vel aperiam illo enim voluptatum id in atque modi a, quibusdam natus quis blanditiis. Provident, quaerat?</p>
+                <button>My projects</button>
+            </div>
+        </main>
+        <script>
+            let nav = document.getElementById("nav"),
+                navButton = document.getElementById("menu");
+
+            navButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                nav.classList.toggle("show");
+            });
+        </script>
+    </body>
+</html>
